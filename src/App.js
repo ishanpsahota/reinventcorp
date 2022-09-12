@@ -8,15 +8,13 @@ import Blogs from './views/Blogs/Blogs';
 import Services from './views/Services/Services';
 import AboutUs from './views/AboutUs/AboutUs';
 import ContactUs from './views/ContactUs/ContactUs';
-
-import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-
 function App() {
-  return (
-    <div className="App">
-      <div className='container-fluid'>
-        <Header />
+return (
+  <div className="App container-fluid m-0 p-0">    
+      <Navbar />
+      <div className='body p-2'>
         <Routes>
           <Route element={<Home />} path="/" />
           <Route element={<Services />} path="/services" />
@@ -24,8 +22,8 @@ function App() {
           <Route element={<AboutUs />} path="/aboutus" />
           <Route element={<ContactUs />} path="/contactus" />
         </Routes>
-        <Footer />
       </div>      
+      <Footer />      
     </div>
   );
 }

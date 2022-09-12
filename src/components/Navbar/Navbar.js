@@ -5,31 +5,33 @@ import Tiktok from 'bootstrap-icons/icons/tiktok.svg';
 import YouTube from 'bootstrap-icons/icons/youtube.svg';
 import Snapchat from 'bootstrap-icons/icons/snapchat.svg';
 
-import './_footer.scss';
+import './_navbar.scss';
 import logo from '../../assets/images/logo2.png';
 
 
-function Footer() {
+function Navbar() {
     return (        
-        <div className='footer container-fluid p-2 m-0'>            
-            <div className='row m-0 p-0'>
-            <div className='col-4'>
-                <Link to="/">
-                    <img src={logo} alt="logo" className='navbar-logo navbar-brand' />
-                </Link>      
-            </div>                      
-            {/* navbar links */}                
-            <div className="col-8 flex m-0 p-0 flex-row d-md-block d-none" id="">
-                <div className='row m-auto h-100'>
-                    <div className="col-6 my-auto">
+        <nav className='navbar navbar-expand-lg navbar-dark navbar-wrapper'>
+            <div className='container-fluid flex flex-row'>
+                <div className='navbar-logo-wrapper'>
+                    <Link to="/">
+                        <img src={logo} alt="logo" className='navbar-logo navbar-brand' />
+                    </Link>      
+                </div>                      
+                {/* navbar links */}
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse navbar-link-list flex flex-row" id="navbarNavAltMarkup">
+                    <div className="navbar-nav mx-auto">
                         <Link className='link-hover  navbar-link' to="/"> Home </Link>
                         <Link className='link-hover  navbar-link' to="/services"> Services </Link>
                         <Link className='link-hover  navbar-link' to="/blogs"> Blogs </Link>
                         <Link className='link-hover  navbar-link' to="/aboutus"> About Us </Link>
                         <Link className='link-hover  navbar-link' to="/contactus"> Contact Us </Link>                
                     </div>
-                    <div className='col-6 my-auto social-links-wrapper'>
-                        <ul className='flex flex-row justify-content-end list-group list-group-horizontal'>
+                    <div className='social-links-wrapper'>
+                        <ul className='flex flex-row list-group list-group-horizontal'>
                             <li className='list-group-item link-hover bg-transparent border-0'>
                                 <a href='https://instagram.com/reinventingcorp' target="_blank" rel="noreferrer">
                                     <img src={Instagram} alt="instagram" />
@@ -52,11 +54,10 @@ function Footer() {
                             </li>
                         </ul>                                                
                     </div>
-                </div>                
-            </div>                                                                                                    
-            </div>            
-        </div>
+                </div>                                                                                            
+            </div>                        
+        </nav>
     );
 }
 
-export default Footer;
+export default Navbar;

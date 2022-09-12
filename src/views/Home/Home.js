@@ -2,7 +2,7 @@ import * as React from 'react';
 
 function Home() {
     return (
-        <div className='row'>
+        <div className='container-fluid'>
             <h1 className='h1'>
                 Home
             </h1>
