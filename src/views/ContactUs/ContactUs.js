@@ -1,11 +1,10 @@
 import * as React from 'react';
+import ContactUsWrapper from '../../components/ContactUs/ContactUsWrapper';
 
 function ContactUs() {
     return (
         <div className='container'>
-            <h1 className='h1'>
-                ContactUs
-            </h1>
+           <ContactUsWrapper />
         </div>
     )
 }
