@@ -1,3 +1,5 @@
+
+// hero section
 .hero {
     &-wrapper {
         background-image: url('../../assets/images/hero_image.png');        
@@ -27,7 +29,7 @@
         padding: 7.5px 25px;
         // margin: 2px 4px;
         border-radius: 45px;
-        background-color: #facf03;                
+        // background-color: #facf03;                
 
         a {
             text-decoration: none;
@@ -39,5 +41,104 @@
                 color: #fff;
             }
         }        
+    }
+}
+
+// service section
+
+.home {
+    &-service {
+        &-wrapper {
+            min-height: 35rem;
+
+            button {
+                a {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+
+        &-item {
+
+            &-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                margin: 5rem auto 1rem;
+            }
+
+            &-wrapper {
+                display: flex;
+                flex-direction: column;
+                width: 28vh;
+                padding: 0.5rem;
+            }
+
+            &-image {
+                background-color: #ccc;
+                min-height: 25vh;
+                display: flex;
+                flex-direction: column;
+                border-radius: 25px;
+
+                img {
+                    margin: auto;
+                    height: 5vh;
+                    width: auto;
+                }
+                // min-width: 5vh;
+            }
+
+            &-text {
+                font-weight: 600;   
+                margin-top: 1rem;         
+            }
+
+        }    
+    }
+
+    &-extra {
+
+        &-wrapper {
+
+            &-one {
+                // background-image: linear-gradient(#fff 5%, #000 90% , #fff 5%);                
+                background: rgb(113,113,113);
+                background: linear-gradient(0deg, rgba(113,113,113,1) 0%, rgba(12,12,12,1) 0%, rgba(0,0,0,1) 56%, rgba(28,28,28,1) 85%, rgba(255,255,255,1) 100%);
+                display: flex;
+                flex-direction: row;     
+                min-height: 30vh;     
+                justify-content: safe;
+                margin: 0;               
+                
+                &-text {
+                    // height: 100%;
+                    width: 100%;
+                    // position: relative;                    
+                    text-align: center;
+                }
+
+                img {
+                    width: 85%;
+                    z-index: 10;
+                    position: relative;
+                    margin-top: 5rem;
+                }
+
+                .clip-path {
+                    clip-path: polygon(0 0, 100% 0%, 45% 100%, 45% 100%);
+                    min-height: 10vh;
+                    bottom: 0 !important;
+                    // position:absolute
+                }
+            }
+
+            &-two {
+                background-color: rgba(255, 255, 255, 0.1);
+                min-height: 20vh;
+            }
+
+        }
+
     }
 }

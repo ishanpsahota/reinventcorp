@@ -11,7 +11,7 @@ import logo from '../../assets/images/logo2.png';
 
 function Navbar() {
     return (        
-        <nav className='navbar navbar-expand-lg navbar-dark navbar-wrapper'>
+        <nav className='navbar sticky-top shadow navbar-expand-lg navbar-dark navbar-wrapper'>
             <div className='container-fluid flex flex-row'>
                 <div className='navbar-logo-wrapper'>
                     <Link to="/">

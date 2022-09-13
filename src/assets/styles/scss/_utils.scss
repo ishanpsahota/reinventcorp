@@ -1,0 +1,57 @@
+
+
+.shadow {
+    box-shadow: 10px 10.5px 15px rgba(20, 20, 20, 0.1);
+}
+
+.invert-color {
+    filter: brightness(50%) invert(1);            
+}
+
+// buttons
+.btn {
+
+    border-radius: 35px !important;
+    font-weight: bold !important;
+
+    box-shadow: 10px 10.5px 15px rgba(20, 20, 20, 0.1);
+
+    &-white {
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+
+    &-blue {
+        background-color: #1192dc;
+        color: #fff !important;
+    }
+
+    &-pink {
+        background-color: #ed64b7 !important;
+        color: #fff !important;
+    }
+
+    &-navy {
+        background-color: #171430 !important;
+        color: #fff !important;
+    }
+
+    &-yellow {
+        background-color: #facf0e !important;
+        color: #000 !important;
+
+        a {
+            color: #000;
+        }       
+
+        &:hover {
+            background-color: transparent !important;
+            border: 0.5px #facf0e solid !important;
+            color: #facf0e !important; 
+        }
+    }    
+
+    a {
+        text-decoration: none; 
+     }
+}
