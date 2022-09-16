@@ -3,7 +3,7 @@ import Person from '../../../node_modules/bootstrap-icons/icons/person.svg';
 
 function TeamWrapper() {
     return (
-        <div className="home-team-wrapper p-2">
+        <div className="home-team-wrapper">            
             <div className="home-team-heading">
                 <h1 className="display-3">
                     The Team

@@ -178,7 +178,12 @@
     &-team {
         &-wrapper {
             text-align: center;
-            margin: 2rem auto;
+            // margin: 2rem auto;
+            padding: 4rem 0.5rem;            
+            // clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+            // border: 10px solid $pink;
+            position: relative;
+            z-index: 10;
         }
 
         &-member {
@@ -218,6 +223,63 @@
 
         &-cta {
             margin-top: 7rem;
+        }
+    }
+
+    &-work {
+        &-wrapper {
+            background-color: #000;       
+            position: relative;     
+            clip-path: polygon(0vh 10vh, 100% 0vh, 100% 100%, 0vh 100%);
+            margin-top: -3vh;
+            min-height: 70vh;
+            padding: 5rem 0.5rem 15rem; 
+            color: #fff;
+            text-align: center;          
+            justify-content: center;              
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-item {
+
+            &-container {
+                display: grid;
+                margin-top: 2rem;
+                gap: 1.5rem;
+                grid-template-columns: 35vw 35vw;
+                // grid-template-rows: auto;
+                grid-auto-rows: 20vw;
+                justify-content: center;
+            }
+
+            &-wrapper {
+                background-color: #d9d9d9;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                img {
+                    max-height: 75%;
+                }
+            }
+
+        }
+    }
+
+    &-contactus {
+        &-wrapper {
+            padding: 10rem 0.5rem;
+            background-color: $accent;
+            margin-top: -10vh;
+            z-index: 99 !important;
+            position: relative;
+            clip-path: polygon(0vh 10vh, 100% 0vh, 100% 100%, 0vh 100%);
+            color: #fff;
+            text-align: center;
+            // border-width: 1px;
+            // border-style: solid;
+            // border-image:  linear-gradient(to right top, #facf0e, #ffae32, #ff8f55, #ff7675, #ff6892, #f468a9, #e26cbf, #c973d2, #a77edf, #8187e5, #548ee4, #1192dc) 1;
         }
     }
 }

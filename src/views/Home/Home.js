@@ -17,6 +17,7 @@ function Home() {
             {/* <ExtraWrapper /> */}
             <TeamWrapper />
             <WorkWrapper />
+            <div className='theme-gradient shadow'/>
             <ContactWrapper />
         </>                    
     )

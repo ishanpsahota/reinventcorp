@@ -6,3 +6,10 @@ body {
     font-family: 'Montserrat', sans-serif !important;
     scroll-behavior: smooth;
 }
+
+.text {
+    &-yellow {
+        color: $yellow !important;
+        text-decoration: none;
+    }
+}
