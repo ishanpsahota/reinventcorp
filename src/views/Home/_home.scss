@@ -52,6 +52,11 @@
         &-wrapper {
             min-height: 35rem;
 
+            background-image: url('../../assets/images/wave3.svg');
+            background-position: bottom;
+            background-size: cover;
+            background-repeat: repeat;
+
             button {
                 a {
                     font-size: 1.25rem;
@@ -184,6 +189,12 @@
             // border: 10px solid $pink;
             position: relative;
             z-index: 10;
+
+            background-image: url('../../assets/images/wave1.svg');
+            background-size: cover;
+            background-position: top;
+            background-repeat: repeat;
+
         }
 
         &-member {
@@ -231,7 +242,7 @@
             background-color: #000;       
             position: relative;     
             clip-path: polygon(0vh 10vh, 100% 0vh, 100% 100%, 0vh 100%);
-            margin-top: -3vh;
+            margin-top: -10vh;
             min-height: 70vh;
             padding: 5rem 0.5rem 15rem; 
             color: #fff;
@@ -239,6 +250,8 @@
             justify-content: center;              
             display: flex;
             flex-direction: column;
+            z-index: 80;
+
         }
 
         &-item {

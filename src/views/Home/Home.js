@@ -12,8 +12,9 @@ import ContactWrapper from '../../components/Home/ContactWrapper';
 function Home() {
     return (
         <>  
-            <HeroWrapper />
+            <HeroWrapper />            
             <ServiceWrapper />
+            <div className='hr' />
             {/* <ExtraWrapper /> */}
             <TeamWrapper />
             <WorkWrapper />

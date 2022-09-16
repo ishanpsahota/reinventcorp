@@ -32,6 +32,15 @@
     position:relative
 }
 
+.hr {
+    // background-color: #f8f8ff;
+    // height: 1px;
+    // width: 90%;
+    margin: auto;
+    content: '&nbsp;';
+    border: 0.5px solid rgba(128, 128, 128, 0.1);
+}
+
 // buttons
 .btn {
 
