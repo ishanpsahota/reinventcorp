@@ -1,7 +1,7 @@
-
+@import 'variables';
 
 .shadow {
-    box-shadow: 10px 10.5px 15px rgba(20, 20, 20, 0.1);
+    box-shadow: $shadow;
 }
 
 .invert-color {
@@ -14,30 +14,30 @@
     border-radius: 35px !important;
     font-weight: bold !important;
 
-    box-shadow: 10px 10.5px 15px rgba(20, 20, 20, 0.1);
+    box-shadow: $shadow;
 
     &-white {
-        background-color: #fff !important;
+        background-color: $white !important;
         color: #000 !important;
     }
 
     &-blue {
-        background-color: #1192dc;
+        background-color: $blue;
         color: #fff !important;
     }
 
     &-pink {
-        background-color: #ed64b7 !important;
+        background-color: $pink !important;
         color: #fff !important;
     }
 
     &-navy {
-        background-color: #171430 !important;
+        background-color: $accent !important;
         color: #fff !important;
     }
 
     &-yellow {
-        background-color: #facf0e !important;
+        background-color: $yellow!important;
         color: #000 !important;
 
         a {
@@ -46,8 +46,8 @@
 
         &:hover {
             background-color: transparent !important;
-            border: 0.5px #facf0e solid !important;
-            color: #facf0e !important; 
+            border: 0.5px $yellow solid !important;
+            color: $yellow !important; 
         }
     }    
 
