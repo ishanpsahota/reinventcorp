@@ -7,11 +7,11 @@ import ServiceWrapper from '../../components/Home/ServiceWrapper';
 // import ExtraWrapper from '../../components/Home/ExtraWrapper';
 import TeamWrapper from '../../components/Home/TeamWrapper';
 import WorkWrapper from '../../components/Home/WorkWrapper';
-import ContactWrapper from '../../components/Home/ContactWrapper';
+import ContactWrapper from '../../components/Common/ContactWrapper';
 
 function Home() {
     return (
-        <>  
+        <div className='home-view'>  
             <HeroWrapper />            
             <ServiceWrapper />
             <div className='hr' />
@@ -20,7 +20,7 @@ function Home() {
             <WorkWrapper />
             <div className='theme-gradient shadow'/>
             <ContactWrapper />
-        </>                    
+        </div>                    
     )
 }
 

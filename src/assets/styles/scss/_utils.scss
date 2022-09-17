@@ -41,6 +41,65 @@
     border: 0.5px solid rgba(128, 128, 128, 0.1);
 }
 
+.hr-2 {
+    margin: 1.5rem auto;
+    content: '&nbsp;';
+    border: 0.5px solid rgba(17, 146, 220, 0.3);
+}
+
+// circle
+.circle {
+
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(50px);
+    height: 5rem;
+    width: 5rem;
+
+    &-one {
+        background-color: $pink;
+        top: 20%;
+        left: -1%;
+        bottom: 0%;
+        right: 0%;
+    }
+
+    &-two {
+        background-color: $yellow;
+        top: 8%;
+        left: 25%;
+        // bottom: 0%;
+        // right: 0%;
+        height: 10rem;
+        width: 10rem;
+    }
+
+    &-three {
+        background-color: $blue;
+        // top: 20%;
+        left: 10%;
+        bottom: 25%;
+        right: 0%;
+    }
+
+    &-four {
+        background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+        // top: 20%;
+        // left: -5%;
+        bottom: 40%;
+        right: 20%;
+    }
+
+    &-five {
+        background-image: linear-gradient(to right top, #facf0e, #ffa739, #ff8166, #ff6892, #ed64b7);
+        // top: 20%;
+        // left: -5%;
+        bottom: 20%;
+        right: -1%;
+    }
+
+}
+
 // buttons
 .btn {
 
