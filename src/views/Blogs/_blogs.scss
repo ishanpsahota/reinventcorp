@@ -1,0 +1,22 @@
+@import '../../assets/styles/scss/variables';
+
+.blogs {
+
+    &-container {
+        overflow: hidden;
+        position: relative;
+    }
+
+    &-wrapper {
+        background-color: $accent !important;
+        min-height: 40rem;
+        color: #fff;
+        align-content: center;
+        justify-content: center;
+        display: flex;  
+        position: relative;      
+        overflow: hidden;
+    }
+
+
+}

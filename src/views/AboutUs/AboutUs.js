@@ -1,11 +1,19 @@
 import * as React from 'react';
 
+import './_aboutus.scss';
+// import AboutUsHeroImg from '../../assets/images/aboutus.png';
+import AboutUsHeroWrapper from '../../components/AboutUs/AboutUsHeroWrapper';
+import AboutUsTeamSection from '../../components/AboutUs/AboutUsTeamSection';
+import AboutUsTestimonialSection from '../../components/AboutUs/AboutUsTestimonialSection';
+import ContactWrapper from '../../components/Common/ContactWrapper'
+
 function AboutUs() {
     return (
-        <div className='container'>
-            <h1 className='h1'>
-                AboutUs
-            </h1>
+        <div className='aboutus-wrapper'>            
+            <AboutUsHeroWrapper />      
+            <AboutUsTeamSection />
+            <AboutUsTestimonialSection />
+            <ContactWrapper />
         </div>
     )
 }

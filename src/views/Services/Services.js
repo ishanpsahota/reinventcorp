@@ -5,6 +5,7 @@ import ServiceHeroWrapper from '../../components/ServicesView/ServiceHeroWrapper
 import ServiceItemListWrapper from '../../components/ServicesView/ServiceItemListWrapper';
 import ServiceBrandingWrapper from '../../components/ServicesView/BrandingWrapper';
 import ServiceSEOWrapper from '../../components/ServicesView/SeoWrapper';
+import ContactWrapper from '../../components/Common/ContactWrapper';
 
 function Services() {
     return (        
@@ -13,6 +14,7 @@ function Services() {
             <ServiceItemListWrapper />
             <ServiceBrandingWrapper />
             <ServiceSEOWrapper />
+            <ContactWrapper />
         </div>        
     )
 }

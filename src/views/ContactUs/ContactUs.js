@@ -1,11 +1,12 @@
 import * as React from 'react';
+import './_contactus.scss'
 
 function ContactUs() {
     return (
-        <div className='container'>            
-            <h1 className='h1'>
-                ContactUs
-            </h1>
+        <div className='contactus-wrapper'>            
+            <div className='contactus-form-wrapper'>
+                
+            </div>
         </div>
     )
 }
