@@ -14,7 +14,7 @@ function Home() {
         <div className='home-view'>  
             <HeroWrapper />            
             <ServiceWrapper />
-            <div className='hr' />
+            <div className='hr-1' />
             {/* <ExtraWrapper /> */}
             <TeamWrapper />
             <WorkWrapper />

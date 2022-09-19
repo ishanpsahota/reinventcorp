@@ -32,7 +32,7 @@
     position:relative
 }
 
-.hr {
+.hr-1 {
     // background-color: #f8f8ff;
     // height: 1px;
     // width: 90%;
@@ -139,11 +139,17 @@
         &:hover {
             background-color: transparent !important;
             border: 0.5px $yellow solid !important;
-            color: $yellow !important; 
+            color: #000 !important; 
         }
     }    
 
     a {
-        text-decoration: none; 
+        text-decoration: none;         
      }
+}
+
+a {
+    .btn-yellow:hover {
+        color: #000 !important;
+    }
 }

@@ -3,16 +3,16 @@
 .contactus {
 
     &-wrapper {
-        background: radial-gradient(circle at top center, #ED64B7 0%, #171430 100%);
-        color: #fff;
+        background: radial-gradient(circle at top center, #ED64B7 0%, #171430 100%);        
         min-height: 45rem;
-        padding: 3rem;
+        padding: 2rem;        
     }
 
     &-form-wrapper {
         background-color: #fff;
         border-radius: 15px;
         border: 1px solid rgba(10, 10, 10, 0.1);
+        padding: 1rem;
     }
 
 }
