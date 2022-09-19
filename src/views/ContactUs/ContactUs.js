@@ -27,6 +27,7 @@ function ContactUs() {
                             Contact Us
                         </h1>
                         <form className='mt-3' name='contactus' method='POST' data-netlify='true'>
+                            <input type="hidden" name="form-name" value="contactus" />
                             <div className="form-floating mb-3">
                                 <input type="text" className="form-control" name='full_name' id="name" placeholder="Enter name"/>
                                 <label htmlFor="name">Full Name</label>
