@@ -1,3 +1,15 @@
+@import 'variables';
+
 .body {
     min-height: 50vh;
+}
+
+.bg {
+    &-glass {
+        background: $glass-overlay !important;
+        backdrop-filter: blur(10px);
+        --webkit-backdrop-filter: blur(10px);
+        height: 100%;
+        width: 100%;
+    }
 }

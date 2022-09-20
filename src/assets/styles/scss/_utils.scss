@@ -1,11 +1,103 @@
-
+@import 'variables';
 
 .shadow {
-    box-shadow: 10px 10.5px 15px rgba(20, 20, 20, 0.1);
+    box-shadow: $shadow;
 }
 
 .invert-color {
     filter: brightness(50%) invert(1);            
+}
+
+.clip-path {
+    &-triangle {
+        clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+        background-color: #000;
+
+        min-height: 20vh;
+        // display: block;
+        position: absolute;        
+    }
+}
+
+.theme-gradient {
+    background-image: linear-gradient(to right top, #facf0e, #ffae32, #ff8f55, #ff7675, #ff6892, #f468a9, #e26cbf, #c973d2, #a77edf, #8187e5, #548ee4, #1192dc);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 15vh;
+    content: '&nbsp;';
+    margin-top: -10vh;
+    clip-path: polygon(0vh 10vh, 100% 0vh, 100% 40%, 0vh 100%);
+    z-index: 100;
+    position:relative
+}
+
+.hr-1 {
+    // background-color: #f8f8ff;
+    // height: 1px;
+    // width: 90%;
+    margin: auto;
+    content: '&nbsp;';
+    border: 0.5px solid rgba(128, 128, 128, 0.1);
+}
+
+.hr-2 {
+    margin: 1.5rem auto;
+    content: '&nbsp;';
+    border: 0.5px solid rgba(17, 146, 220, 0.3);
+}
+
+// circle
+.circle {
+
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(50px);
+    height: 5rem;
+    width: 5rem;
+
+    &-one {
+        background-color: $pink;
+        top: 20%;
+        left: -1%;
+        bottom: 0%;
+        right: 0%;
+    }
+
+    &-two {
+        background-color: $yellow;
+        top: 8%;
+        left: 25%;
+        // bottom: 0%;
+        // right: 0%;
+        height: 10rem;
+        width: 10rem;
+    }
+
+    &-three {
+        background-color: $blue;
+        // top: 20%;
+        left: 10%;
+        bottom: 25%;
+        right: 0%;
+    }
+
+    &-four {
+        background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+        // top: 20%;
+        // left: -5%;
+        bottom: 40%;
+        right: 20%;
+    }
+
+    &-five {
+        background-image: linear-gradient(to right top, #facf0e, #ffa739, #ff8166, #ff6892, #ed64b7);
+        // top: 20%;
+        // left: -5%;
+        bottom: 20%;
+        right: -1%;
+    }
+
 }
 
 // buttons
@@ -14,30 +106,30 @@
     border-radius: 35px !important;
     font-weight: bold !important;
 
-    box-shadow: 10px 10.5px 15px rgba(20, 20, 20, 0.1);
+    box-shadow: $shadow;
 
     &-white {
-        background-color: #fff !important;
+        background-color: $white !important;
         color: #000 !important;
     }
 
     &-blue {
-        background-color: #1192dc;
+        background-color: $blue;
         color: #fff !important;
     }
 
     &-pink {
-        background-color: #ed64b7 !important;
+        background-color: $pink !important;
         color: #fff !important;
     }
 
     &-navy {
-        background-color: #171430 !important;
+        background-color: $accent !important;
         color: #fff !important;
     }
 
     &-yellow {
-        background-color: #facf0e !important;
+        background-color: $yellow!important;
         color: #000 !important;
 
         a {
@@ -46,12 +138,18 @@
 
         &:hover {
             background-color: transparent !important;
-            border: 0.5px #facf0e solid !important;
-            color: #facf0e !important; 
+            border: 0.5px $yellow solid !important;
+            color: #000 !important; 
         }
     }    
 
     a {
-        text-decoration: none; 
+        text-decoration: none;         
      }
+}
+
+a {
+    .btn-yellow:hover {
+        color: #000 !important;
+    }
 }

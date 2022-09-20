@@ -4,21 +4,23 @@ import './_home.scss';
 
 import HeroWrapper from '../../components/Home/HeroWrapper';
 import ServiceWrapper from '../../components/Home/ServiceWrapper';
-import ExtraWrapper from '../../components/Home/ExtraWrapper';
+// import ExtraWrapper from '../../components/Home/ExtraWrapper';
 import TeamWrapper from '../../components/Home/TeamWrapper';
 import WorkWrapper from '../../components/Home/WorkWrapper';
-import ContactWrapper from '../../components/Home/ContactWrapper';
+import ContactWrapper from '../../components/Common/ContactWrapper';
 
 function Home() {
     return (
-        <>  
-            <HeroWrapper />
+        <div className='home-view'>  
+            <HeroWrapper />            
             <ServiceWrapper />
-            <ExtraWrapper />
+            <div className='hr-1' />
+            {/* <ExtraWrapper /> */}
             <TeamWrapper />
             <WorkWrapper />
+            <div className='theme-gradient shadow'/>
             <ContactWrapper />
-        </>                    
+        </div>                    
     )
 }
 
