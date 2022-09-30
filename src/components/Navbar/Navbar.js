@@ -11,8 +11,8 @@ import logo from '../../assets/images/logo2.png';
 
 function Navbar() {
     return (        
-        <nav className='navbar sticky-top navbar-expand-lg navbar-dark navbar-wrapper'>
-            <div className='container-fluid flex flex-row'>
+        <nav className='navbar sticky-top navbar-expand-md navbar-dark navbar-wrapper'>
+            <div className='navbar-inner-wrapper container-fluid '>
                 <div className='navbar-logo-wrapper'>
                     <Link to="/">
                         <img src={logo} alt="logo" className='navbar-logo navbar-brand' />
@@ -22,7 +22,7 @@ function Navbar() {
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse navbar-link-list flex flex-row" id="navbarNavAltMarkup">
+                <div className="collapse navbar-collapse navbar-link-list" id="navbarNavAltMarkup">
                     <div className="navbar-nav mx-auto">
                         <Link className='link-hover  navbar-link' to="/"> Home </Link>
                         <Link className='link-hover  navbar-link' to="/services"> Services </Link>

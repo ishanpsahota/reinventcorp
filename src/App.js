@@ -8,12 +8,16 @@ import Blogs from './views/Blogs/Blogs';
 import Services from './views/Services/Services';
 import AboutUs from './views/AboutUs/AboutUs';
 import ContactUs from './views/ContactUs/ContactUs';
-import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
+// import Navbar from './components/Navbar/Navbar';
+// import Footer from './components/Footer/Footer';
+
+import HeaderFooterContent from './components/Common/HeaderFooterContent';
+
 function App() {
 return (
   <div className="App container-fluid m-0 p-0">    
-      <Navbar />
+      {/* <Navbar /> */}
+      <HeaderFooterContent navbar={true} />
       <div className='body'>
         <Routes>
           <Route element={<Home />} path="/" />
@@ -23,7 +27,8 @@ return (
           <Route element={<ContactUs />} path="/contactus" />
         </Routes>
       </div>      
-      <Footer />      
+      {/* <Footer />       */}
+      <HeaderFooterContent navbar={false} />
     </div>
   );
 }
