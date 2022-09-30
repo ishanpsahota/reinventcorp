@@ -38,8 +38,10 @@
         &-img {
             // margin: 0 auto;
             text-align: center;
+            margin: auto
             img {
-                max-height: 80%;                
+                max-height: 70%;     
+                margin: auto;           
             }
             
         }
@@ -57,7 +59,7 @@
                 display: grid;
                 gap: 1.5rem;
                 grid-template-columns: 26vw 26vw;
-                grid-auto-rows: 25v5;
+                // grid-auto-rows: 25vh;
                 justify-content: center;
                 padding: 3rem 1rem;                
                 margin-bottom: 6rem;
@@ -119,5 +121,98 @@
         }
 
     }
+}
 
+@media screen and (max-width: 576px)  {
+    
+    .aboutus {
+        &-inner {
+            &-wrapper {
+                // overflow: visible;                
+            }
+
+            &-img {
+                img {
+                    max-height: 35%;
+                }
+            }
+        }
+
+        &-hero{
+            &-wrapper {
+            // overflow: visible;
+                min-height: 120vh;
+            }
+        }
+
+        &-team {
+            &-member {
+                &-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                &-item {
+                    margin: 0.5rem auto;
+                    min-height: 20vw;
+                    // width: 20vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 676px) {
+    
+    .aboutus-inner-img {
+        img {
+            max-height: 25%;
+        }
+    }
+
+}
+
+@media screen and (min-width: 677px) and (max-width: 768px) {
+    
+    .aboutus {
+        &-inner {
+            &-wrapper {
+                // overflow: visible;                
+            }
+
+            &-img {
+                img {
+                    max-height: 65%;
+                }
+            }
+        }
+
+        // &-hero{
+        //     &-wrapper {
+        //     // overflow: visible;
+        //         min-height: 120vh;
+        //     }
+        // }
+    }
+
+}
+
+@media screen and (min-width: 376px) and (max-width: 575px) {
+    
+    .aboutus-inner-img {
+        img {
+            max-height: 20%;
+        }
+    } 
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .aboutus-inner-img {
+        img {
+            display: none;
+        }
+    }
+    
 }

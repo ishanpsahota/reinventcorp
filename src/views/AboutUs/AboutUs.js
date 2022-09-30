@@ -4,7 +4,7 @@ import './_aboutus.scss';
 // import AboutUsHeroImg from '../../assets/images/aboutus.png';
 import AboutUsHeroWrapper from '../../components/AboutUs/AboutUsHeroWrapper';
 import AboutUsTeamSection from '../../components/AboutUs/AboutUsTeamSection';
-import AboutUsTestimonialSection from '../../components/AboutUs/AboutUsTestimonialSection';
+// import AboutUsTestimonialSection from '../../components/AboutUs/AboutUsTestimonialSection';
 import ContactWrapper from '../../components/Common/ContactWrapper'
 
 function AboutUs() {
@@ -12,7 +12,7 @@ function AboutUs() {
         <div className='aboutus-wrapper'>            
             <AboutUsHeroWrapper />      
             <AboutUsTeamSection />
-            <AboutUsTestimonialSection />
+            {/* <AboutUsTestimonialSection /> */}
             <ContactWrapper />
         </div>
     )
