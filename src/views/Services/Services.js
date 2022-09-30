@@ -13,6 +13,7 @@ function Services() {
             <ServiceHeroWrapper />
             <ServiceItemListWrapper />
             <ServiceBrandingWrapper />
+            <div className='hr-3 d-md-none d-block' />
             <ServiceSEOWrapper />
             <ContactWrapper />
         </div>        
