@@ -1,5 +1,5 @@
 
-
+import * as React from 'react';
 function ServiceItemListWrapper() {
     return (
         <div className='services-item-list-wrapper'>

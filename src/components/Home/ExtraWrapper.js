@@ -1,4 +1,5 @@
 
+import * as React from 'react';
 // import sideImg from '../../assets/images/home-extra-one.png';
 
 function ExtraWrapper() {

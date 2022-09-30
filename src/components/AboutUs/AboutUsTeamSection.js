@@ -1,3 +1,4 @@
+import * as React from 'react';
 
 import Person from '../../../node_modules/bootstrap-icons/icons/person.svg';
 

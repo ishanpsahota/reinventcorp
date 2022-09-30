@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 import ServiceBrandingImg from '../../assets/images/service-branding.png';
 
 function ServiceBrandingWrapper() {

@@ -1,5 +1,8 @@
+import * as React from 'react';
+
 // import { Link } from 'react-router-dom';
 import Award from '../../../node_modules/bootstrap-icons/icons/award.svg';
+
 
 function WorkWrapper() {
     return (
