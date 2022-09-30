@@ -4,12 +4,14 @@ import './_contactus.scss'
 function ContactUs() {
     return (
         <div className='contactus-wrapper'>            
-            <div className='contactus-form-wrapper'>
+            <div className='contactus-form-wrapper w-lg-75 mx-auto'>
                 <div className='row'>
-                    <div className='col-12 col-md-6 p-3 p-md-5'>
-                        <h1 className='display-4'>
-                            Book an appointment
-                        </h1>
+                    <div className='col-12 col-md-6 p-3 p-md-5' id="book_an_appointment">
+                        <strong>
+                            <h1 className='display-4'>
+                                Book an appointment
+                            </h1>
+                        </strong>                        
                         <br /> 
                         <h3> Get a free consultation! <br/> Book an appointment. </h3>
                         <br /> <br/>                        
@@ -18,11 +20,10 @@ function ContactUs() {
                                 Book an appointment now!
                             </button>
                         </a>                        
-                    </div>
-                    {/* <div className='vr d-md-block d-none' />                     */}
-                    <div className='hr-1 d-md-none d-block' />      
+                    </div>                    
+                    <div className='hr-4 d-md-none d-block' />                          
                     {/* right side */}
-                    <div className='col-12 col-md-6 p-4 p-md-5'>
+                    <div className='col-12 col-md-6 p-4 p-md-5' id="contact_us">
                         <h1 className='display-4'>
                             Contact Us
                         </h1>

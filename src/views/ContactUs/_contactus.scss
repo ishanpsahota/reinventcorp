@@ -4,7 +4,7 @@
 
     &-wrapper {
         background: radial-gradient(circle at top center, #ED64B7 0%, #171430 100%);        
-        min-height: 45rem;
+        min-height: 60rem;
         padding: 2rem;        
     }
 
@@ -15,4 +15,21 @@
         padding: 1rem;
     }
 
+}
+
+@media screen and (max-width: 576px) {
+    .contactus {
+        &-wrapper {
+            padding: 1.25rem;
+        }
+
+        &-form-wrapper {
+            padding: 0.75rem;
+
+            div#book_an_appointment {
+                text-align: center;
+            }
+
+        }
+    }
 }
