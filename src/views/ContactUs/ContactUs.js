@@ -3,7 +3,7 @@ import './_contactus.scss'
 
 function ContactUs() {
     return (
-        <div className='contactus-wrapper'>            
+        <div className='contactus-wrapper fade-in'>            
             <div className='contactus-form-wrapper w-lg-75 mx-auto'>
                 <div className='row'>
                     <div className='col-12 col-md-6 p-3 p-md-5' id="book_an_appointment">

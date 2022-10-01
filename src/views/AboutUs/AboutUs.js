@@ -9,7 +9,7 @@ import ContactWrapper from '../../components/Common/ContactWrapper'
 
 function AboutUs() {
     return (
-        <div className='aboutus-wrapper'>            
+        <div className='aboutus-wrapper fade-in'>            
             <AboutUsHeroWrapper />      
             <AboutUsTeamSection />
             {/* <AboutUsTestimonialSection /> */}

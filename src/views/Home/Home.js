@@ -11,7 +11,7 @@ import ContactWrapper from '../../components/Common/ContactWrapper';
 
 function Home() {
     return (
-        <div className='home-view'>  
+        <div className='home-view fade-in'>  
             <HeroWrapper />            
             <ServiceWrapper />
             <div className='hr-1' />

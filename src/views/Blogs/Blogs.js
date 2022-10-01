@@ -5,7 +5,7 @@ import GlassCircles from '../../components/Common/GlassCircles';
 
 function Blogs() {
     return (
-        <div className='blogs-container'>                        
+        <div className='blogs-container fade-in'>                        
             <div className='blogs-wrapper '>                      
                 <h1 className='display-1 my-auto'>
                     We will be back shortly! 

@@ -9,7 +9,7 @@ import ContactWrapper from '../../components/Common/ContactWrapper';
 
 function Services() {
     return (        
-        <div className='services-container'>
+        <div className='services-container fade-in'>
             <ServiceHeroWrapper />
             <ServiceItemListWrapper />
             <ServiceBrandingWrapper />
